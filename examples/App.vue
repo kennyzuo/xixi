@@ -1,24 +1,19 @@
 <template>
   <div>
-    <test-button></test-button>
+    <button-demo></button-demo>
   </div>
 </template>
 
 <script>
-import TestButton from './TestButton'
+import ButtonDemo from "./demo/button-demo"
 // console.log(TestButton)
 export default {
   components: {
-    TestButton
-  }
+    ButtonDemo,
+  },
 }
 </script>
 
-<style lang="scss" scoped>
-.row {
-  padding: 10px 0;
-}
-.hm-button {
-  margin-left: 10px;
-}
+<style lang="scss">
+@import "../packages/style";
 </style>

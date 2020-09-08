@@ -1,9 +1,9 @@
 import Vue from 'vue'
 // 导入组件库
-import BuUI from './../packages'
+import Xixi from './../packages'
 import App from './App.vue'
 
-Vue.use(BuUI)
+Vue.use(Xixi)
 
 Vue.config.productionTip = false
 
