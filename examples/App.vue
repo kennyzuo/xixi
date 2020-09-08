@@ -1,23 +1,24 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div>
+    <test-button></test-button>
   </div>
 </template>
 
 <script>
+import TestButton from './TestButton'
+// console.log(TestButton)
 export default {
-  name: 'App',
-};
+  components: {
+    TestButton
+  }
+}
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" scoped>
+.row {
+  padding: 10px 0;
+}
+.hm-button {
+  margin-left: 10px;
 }
 </style>

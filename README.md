@@ -1,27 +1,69 @@
-# xixi-xmobile
+# Vue 组件库
 
-> A Vue.js project
+## 储备知识
 
-## Build Setup
+- Vue 脚手架的基本使用
+- Vue 创建组件
+- props 校验和$emit(常用)
+- $attrs和$listeners
+- 中央事件总线（非父子组件间通信）
+- v-model
+- provide和inject
+- $parent和$children
+- vuex
 
-``` bash
-# install dependencies
+## 工具
+
+- Rollup  |  Parcel
+
+## nrm
+
+掌握 nrm 基本用法
+
+https://www.npmjs.com/package/nrm
+
+## npm
+
+掌握 npm 基本用法
+
+https://www.npmjs.com/package/npm
+
+## .gitignore
+
+熟悉 .gitigore 的配置
+
+https://git-scm.com/docs/gitignore
+
+## .npmignore
+
+熟悉 .npmignore 的配置
+
+https://docs.npmjs.com/using-npm/developers.html
+
+--------------------------------------------------------------------
+
+# bu
+
+## Project setup
+```
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
