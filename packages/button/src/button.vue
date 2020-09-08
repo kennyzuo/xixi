@@ -1,6 +1,7 @@
 <template>
   <button :class="buttonClass">
-    <slot />
+    <span v-if="icon" class="icon is-small"><i :class="iconClass"></i></span>
+    <slot></slot>
   </button>
 </template>
 
@@ -24,10 +25,6 @@ export default {
       type: Boolean,
       default: false,
     },
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
     icon: {
       type: String,
       default: "",
@@ -36,21 +33,29 @@ export default {
       type: Boolean,
       default: false,
     },
+    full: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     buttonClass() {
-      let { color, light, size, round, disabled, loading } = this
+      let { color, light, size, round, loading, full } = this
       return [
         "button",
         {
           [`is-${color}`]: !!color,
           [`is-light`]: !!light,
           [`is-${size}`]: !!size,
-          [`is-round`]: !!round,
-          [`is-disabled`]: !!disabled,
+          [`is-rounded`]: !!round,
           [`is-loading`]: !!loading,
+          [`is-fullwidth`]: !!full,
         },
       ]
+    },
+    iconClass() {
+      let { icon } = this
+      return `fas ${icon}`
     },
   },
   methods: {},
