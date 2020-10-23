@@ -1,5 +1,5 @@
 <template>
-  <div style="padding: 10px">
+  <div class="button-wrapper" style="padding: 10px">
     <div class="box">
       <p>Color</p>
       <xi-button color="info">Info</xi-button>
@@ -33,7 +33,7 @@
       <xi-button size="small" loading color="success">Small</xi-button>
       <xi-button size="Default" loading color="warning">Default</xi-button>
       <xi-button size="normal" loading color="danger">Normal</xi-button>
-      <xi-button size="medium" loading color="info">Medium</xi-button> 
+      <xi-button size="medium" loading color="info">Medium</xi-button>
     </div>
     <div class="box">
       <p>Disabled</p>
@@ -51,15 +51,16 @@ export default {}
 </script>
 
 <style lang="scss">
-.box {
-  p {
-    margin-left: 10px;
-    font-size: 24px;
-    padding-bottom: 10px;
+
+  .box {
+    & > p {
+      margin-left: 10px;
+      font-size: 24px;
+      padding-bottom: 10px;
+    }
   }
-}
-.button {
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
+  .button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  } 
 </style>
