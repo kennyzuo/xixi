@@ -1,0 +1,11 @@
+.box {
+  & > p {
+    margin-left: 10px;
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+}
+.button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+} 

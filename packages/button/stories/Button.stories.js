@@ -1,4 +1,5 @@
-import XiButton from '..';
+import ButtonDemo from './button-demo';
+import XiButton from '../';
 
 export default {
   title: 'Example/Button',
@@ -7,12 +8,10 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { XiButton },
-  template: '<xi-button v-bind="$props">xxx</xi-button>',
+  components: { ButtonDemo },
+  template: '<button-demo></button-demo>',
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  color: 'success'
-};
+export const Example = Template.bind({});
+
+Example.args = {};
