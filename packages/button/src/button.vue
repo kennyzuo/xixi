@@ -61,3 +61,6 @@ export default {
   methods: {},
 }
 </script>
+<style>
+@import '../../style/button.scss';
+</style>

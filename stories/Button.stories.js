@@ -1,39 +1,18 @@
-import MyButton from './Button.vue';
+import XiButton from '../packages/button';
 
 export default {
   title: 'Example/Button',
-  component: MyButton,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-    size: { control: { type: 'select', options: ['small', 'medium', 'large'] } },
-  },
+  component: XiButton,
 };
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { MyButton },
-  template: '<my-button @onClick="onClick" v-bind="$props" />',
+  components: { XiButton },
+  template: '<xi-button v-bind="$props">xxx</xi-button>',
 });
 
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  label: 'Button',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+  color: 'success'
 };
