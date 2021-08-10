@@ -2,7 +2,7 @@
 import Columns from "./src/columns.js"
 import Column from "./src/column.js"
 // 为组件提供 install 安装方法，供按需引入
-;[Columns, Column].forEach((component) => {
+[Columns, Column].forEach((component) => {
   component.install = function(Vue) {
     Vue.component(component.name, component)
   }
