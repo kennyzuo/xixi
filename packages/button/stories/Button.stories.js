@@ -1,4 +1,4 @@
-import XiButton from '../packages/button';
+import XiButton from '..';
 
 export default {
   title: 'Example/Button',
