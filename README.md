@@ -46,7 +46,7 @@ https://docs.npmjs.com/using-npm/developers.html
 
 ## Project setup
 ```
-npm install
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
@@ -67,3 +67,17 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+
+
+## yarn workplaces
+
+```
+// 工作区根目录安装依赖
+yarn add xxx -D -W
+
+// 给指定工作区安装依赖
+yarn workplace [工作区（button）] add xxx@version
+
+// 给所有工作区安装依赖
+yarn install
+```

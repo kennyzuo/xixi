@@ -1,5 +1,5 @@
 import ButtonDemo from './button-demo';
-import XiButton from '../';
+import XiButton from '..';
 
 export default {
   title: 'Example/Button',
